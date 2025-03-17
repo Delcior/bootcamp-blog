@@ -3,6 +3,8 @@ name: CI/CD Pipeline
 # Trigger the workflow on push to main and develop branches, and on pull requests
 on:
   push:
+    tags:
+      - '*'
     branches:
       - main
   pull_request:
